@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    XML<!-- Tema base de tu app (probablemente ya lo tienes) -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Tus configuraciones normales -->
+    </style>
+
+    <!-- Tema transparente para la Activity del alert -->
+    <!-- En res/values/styles.xml o themes.xml -->
+    <style name="TransparentTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Fondo completamente transparente -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!-- Ventana translúcida (permite ver lo que hay detrás) -->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- Sin título -->
+        <item name="android:windowNoTitle">true</item>
+
+
+        <!-- IMPORTANTE: NO pongas windowIsFloating aquí -->
+
+        <!-- Otros ajustes para que se vea bien -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="Theme.PolloAlert" parent="Base.Theme.PolloAlert" />
+</resources>
